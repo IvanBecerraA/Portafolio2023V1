@@ -183,3 +183,55 @@ html{
 .sobremi button:hover .overlay{
     width: 100%;
 }
+.skills{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.skills .fila{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    text-align: center;
+    margin-bottom: 25px;
+}
+.skills .fila .contenedor-skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills .fila .skills{
+    width: 100px;
+    height: 100px;
+    background-color: #1e2326;
+    border-radius: 10px;
+    margin: auto 15px 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+.skills .fila .skills:hover{
+    background-color: aqua;
+}
+.skills .fila .skills i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
