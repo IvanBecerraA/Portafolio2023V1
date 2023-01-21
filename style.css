@@ -21,19 +21,18 @@ html{
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: 15px 20px;
+    align-items: center;
+    padding: 15px 20px;
 }
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: aqua;
+    color: rgb(224, 141, 64);
     text-decoration: none;
-    margin-top: 35px;
 }
 .contenedor-header header ul{
     display: flex;
     list-style: none;
-    margin: 20px;
 }
 .contenedor-header header nav ul li a{
     text-align: none;
@@ -44,10 +43,10 @@ html{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: aqua
+    color: rgb(224, 141, 64)
 }
 .nav-responsive{
-    background-color: aqua;
+    background-color: rgb(224, 141, 64);
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -74,7 +73,7 @@ html{
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid aqua;
+    border: 10px solid rgb(224, 141, 64);
     display: block;
     width: 80%;
     margin: auto;
@@ -100,10 +99,10 @@ html{
     line-height: 42px;
     margin: 40px 5px;
     font-size: 20px;
-    transition: 0.5s;
+    transition: .5s;
 }
 .inicio .contenido-banner .redes a:hover{
-    background-color: aqua;
+    background-color: rgb(165, 228, 236);
 }
 .sobremi{
     background-color: #1e2326;
@@ -126,7 +125,7 @@ html{
     margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
-    color: aqua;
+    color: rgb(224, 141, 64);
     font-weight: bold;
 }
 .sobremi .contenedor-hobbies{
@@ -152,7 +151,7 @@ html{
     transition: .5s;
 }
 .sobremi .contenedor-hobbies .hobbies:hover{
-    background-color: aqua;
+    background-color: rgb(224, 141, 64);
 }
 .sobremi .contenedor-hobbies .hobbies i{
     font-size: 30px;
@@ -177,7 +176,7 @@ html{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: aqua;
+    background-color: rgb(224, 141, 64);
     z-index: -1;
     transition: 1s;
 }
@@ -230,7 +229,7 @@ html{
     transition: .5s;
 }
 .skills .fila .skills:hover{
-    background-color: aqua;
+    background-color: rgb(224, 141, 64);
 }
 .skills .fila .skills i{
     font-size: 30px;
@@ -274,7 +273,7 @@ html{
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    background: linear-gradient(rgb(224, 141, 64), rgba(116, 56, 0, 0.616));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -338,10 +337,93 @@ html{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: aqua;
+    background-color: rgb(224, 141, 64);
     z-index: -1;
     transition: 1s;
 }
 .contacto button:hover .overlay{
     width: 100%;
+}
+/* Footer */
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 10px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .5s;
+}
+footer .redes a:hover{
+    background-color: rgb(224, 141, 64);
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(224, 141, 64);
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+@media screen and (max-width:980px) {
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px) {
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: fit-content;
+    }
+    .proyectos .galeria{
+        display: block;
+        width: 100%;
+    }
+    .proyectos .galeria .proyecto{
+        max-width: 100%;
+    }
+    .proyectos .galeria .proyecto img{
+        width: 100%;
+    }
 }

@@ -16,14 +16,14 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#proyectos">PROYECTOS</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -175,7 +175,7 @@
             </div>
         </div>
     </section>
-
+<!-- 
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
             <h2>Contacto</h2>
@@ -190,7 +190,17 @@
                 </button>
             </div>
         </div>
-    </section>
+    </section> -->
 
+    <footer>
+        <a href="#inicio" class="arriba"><i class="fa-solid fa-angles-up"></i></a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/ivan-becerra-dev/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/IvanBecerraA" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <p>Portafolio Iván Becerra 2023</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
