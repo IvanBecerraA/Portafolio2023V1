@@ -27,8 +27,15 @@ html{
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: rgb(224, 141, 64);
+    color: orange;
+    text-shadow: 0 0 20px orange;
     text-decoration: none;
+    transition: .3s;
+}
+.contenedor-header header .logo a:hover{
+    text-shadow: 0 0 20px orange,
+                0 0 50px orange,
+                0 0 85px orange;
 }
 .contenedor-header header ul{
     display: flex;
@@ -39,23 +46,34 @@ html{
     color: #fff;
     margin: 0 15px;
     padding: 3px;
-    transition: 0.5s;
+    transition: .3s;
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: rgb(224, 141, 64)
+    color: orange;
+    text-shadow: 0 0 20px orange,
+    0 0 50px orange,
+    0 0 85px orange;
 }
 .nav-responsive{
-    background-color: rgb(224, 141, 64);
+    background-color: orange;
+    box-shadow: 0 0 20px orange;
+    transition: .3s;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
 }
+.nav-responsive:hover{
+    color: #fff;
+    box-shadow: 0 0 20px orange,
+    0 0 50px orange,
+    0 0 85px orange;
+}
 /* INICIO */
 .inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    background: linear-gradient(to top, rgba(30,35,38,.7), rgba(30,35,38,.9)),
     url(img/fondo.jpg);
     background-size: cover;
     height: 100vh;
@@ -73,7 +91,8 @@ html{
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid rgb(224, 141, 64);
+    border: 10px solid #fff;
+    box-shadow: 0 0 10px #fff;
     display: block;
     width: 80%;
     margin: auto;
@@ -81,8 +100,9 @@ html{
 }
 .inicio .contenido-banner h1{
     margin-top: 40px;
-    font-size: 42px;
+    font-size: 48px;
     font-family: 'Righteous';
+    text-shadow: 0 0 10px #fff;
 }
 .inicio .contenido-banner h2{
     font-size: 15px;
@@ -100,9 +120,12 @@ html{
     margin: 40px 5px;
     font-size: 20px;
     transition: .5s;
+    box-shadow: 0 0 8px #fff;
 }
 .inicio .contenido-banner .redes a:hover{
-    background-color: rgb(165, 228, 236);
+    background-color: orange;
+    box-shadow: 0 0 20px orange,
+    0 0 50px orange;
 }
 .sobremi{
     background-color: #1e2326;
@@ -118,6 +141,7 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+    text-shadow: 0 0 10px #fff;
 }
 .sobremi .contenido-seccion p{
     font: 18px;
@@ -125,8 +149,9 @@ html{
     margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
+    font-size: 18px;
     color: rgb(224, 141, 64);
-    font-weight: bold;
+    text-shadow: 0 0 8px orange;
 }
 .sobremi .contenedor-hobbies{
    display: flex;
@@ -137,6 +162,7 @@ html{
     font-family: 'Righteous';
     margin-bottom: 25px;
     text-align: center;
+    text-shadow: 0 0 8px #fff;
 }
 .sobremi .contenedor-hobbies .hobbies{
     width: 100px;
@@ -151,16 +177,20 @@ html{
     transition: .5s;
 }
 .sobremi .contenedor-hobbies .hobbies:hover{
-    background-color: rgb(224, 141, 64);
+    background-color: indigo;
+    box-shadow: 0 0 20px indigo,
+    0 0 50px indigo,
+    0 0 85px indigo;
+    transform: scale(1.15);
 }
 .sobremi .contenedor-hobbies .hobbies i{
     font-size: 30px;
     margin-bottom: 10px;
 }
-.sobremi button{
+.sobremi .button{
     cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
+    background-color: orange;
+    border: none;
     width: fit-content;
     display: block;
     margin: 20px auto;
@@ -169,19 +199,16 @@ html{
     color: #fff;
     position: relative;
     z-index: 10;
+    border-radius: 5px;
+    box-shadow: 0 0 20px orange;
+    transition: .5s;
+    text-decoration: none;
 }
-.sobremi button .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: rgb(224, 141, 64);
-    z-index: -1;
-    transition: 1s;
-}
-.sobremi button:hover .overlay{
-    width: 100%;
+.sobremi .button:hover{
+    color: #fff;
+    box-shadow: 0 0 20px orange,
+                0 0 50px orange,
+                0 0 85px orange;
 }
 .skills{
     background-color: #252A2E;
@@ -197,6 +224,7 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+    text-shadow: 0 0 10px #fff;
 }
 .skills .fila{
     display: flex;
@@ -211,6 +239,7 @@ html{
     font-family: 'Righteous';
     text-align: center;
     margin-bottom: 25px;
+    text-shadow: 0 0 8px #fff;
 }
 .skills .fila .contenedor-skills{
     display: flex;
@@ -229,7 +258,11 @@ html{
     transition: .5s;
 }
 .skills .fila .skills:hover{
-    background-color: rgb(224, 141, 64);
+    background-color: indigo;
+    box-shadow: 0 0 20px indigo,
+    0 0 50px indigo,
+    0 0 85px indigo;
+    transform: scale(1.15);
 }
 .skills .fila .skills i{
     font-size: 30px;
@@ -250,6 +283,7 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+    text-shadow: 0 0 10px #fff;
 }
 .proyectos .galeria{
     display: flex;
@@ -262,35 +296,34 @@ html{
     height: fit-content;
     margin: 10px;
     cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: .5s;
 }
 .proyectos .galeria .proyecto img{
     width: 100%;
-    display: block;
+    transition: .7s;
 }
-.proyectos .galeria .proyecto .overlay{
+.proyectos .galeria .proyecto img:hover{
+    opacity: .5;
+}
+.proyectos .galeria .proyecto h3{
     position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background: linear-gradient(rgb(224, 141, 64), rgba(116, 56, 0, 0.616));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 1s;
-    font-size: 18px;
-    letter-spacing: 3px;
-    opacity: 0;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
-.proyectos .galeria .proyecto .overlay h3{
-    margin-bottom: 20px;
-    transition: .5s;
+.proyectos .galeria .proyecto p{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
-.proyectos .galeria .proyecto .overlay:hover{
-    opacity: 1;
-}
-.proyectos .galeria .proyecto .overlay:hover h3{
-    margin-bottom: 0px;
+.proyectos .galeria .proyecto:hover{
+    transform: scale(1.15);
+    box-shadow: 0 0 20px gray;
 }
 /* CONTACTO */
 .contacto{
@@ -348,13 +381,13 @@ html{
 footer{
     background-color: #252A2E;
     color: #fff;
-    padding: 20px 0 10px 0;
+    padding: 20px 0 30px 0;
     text-align: center;
     position: relative;
     width: 100%;
 }
 footer .redes{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 footer .redes a{
     color: #fff;
@@ -368,6 +401,12 @@ footer .redes a{
     margin: 40px 5px;
     font-size: 20px;
     transition: .5s;
+    box-shadow: 0 0 8px #fff;
+}
+footer .redes a:hover{
+    background-color: orange;
+    box-shadow: 0 0 20px orange,
+    0 0 50px orange;
 }
 footer .redes a:hover{
     background-color: rgb(224, 141, 64);
@@ -376,7 +415,8 @@ footer .arriba{
     display: block;
     width: 50px;
     height: 50px;
-    background-color: rgb(224, 141, 64);
+    background-color: orange;
+    box-shadow: 0 0 20px orange;
     color: #fff;
     position: absolute;
     left: 50%;
@@ -385,6 +425,11 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+}
+footer .arriba:hover{
+    box-shadow: 0 0 20px orange,
+    0 0 50px orange,
+    0 0 85px orange;
 }
 @media screen and (max-width:980px) {
     nav{
