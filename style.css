@@ -75,6 +75,7 @@ html{
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.7), rgba(30,35,38,.9)),
     url(img/fondo.jpg);
+    background-attachment: fixed;
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -340,6 +341,7 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+    text-shadow: 0 0 10px #fff;
 }
 .contacto .contenedor-contacto input, .contenedor-contacto textarea{
     display: block;

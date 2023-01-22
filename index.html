@@ -20,7 +20,7 @@
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
                     <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
                     <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
-                    <!-- <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li> -->
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -134,8 +134,8 @@
                             <span>Proactivo</span>
                         </div>
                         <div class="skills">
-                            <span>Cominicativo</span>
-                        </div>
+                            <span>Comunicativo</span>
+                        </div> 
                         <div class="skills">
                             <span>Comprometido</span>
                         </div>
@@ -170,22 +170,26 @@
             </div>
         </div>
     </section>
-<!-- 
+
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
             <h2>Contacto</h2>
             <div class="contenedor-contacto">
-                <input type="text" placeholder="Tú Nombre">
-                <input type="text" placeholder="Dirección de correo">
-                <input type="text" placeholder="Asunto">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <button>
-                    <i class="fa-solid fa-envelope"></i> Enviar Mensaje
-                    <span class="overlay"></span>
-                </button>
+                <form action="https://formsubmit.co/ivanbecerradev@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Tú Nombre" required>
+                    <input type="email" name="email" placeholder="Dirección de correo" required>
+                    <input type="text" name="subject" placeholder="Asunto" required>
+                    <textarea name="comments" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <button type="submit">
+                        <i class="fa-solid fa-envelope"></i> Enviar Mensaje
+                        <span class="overlay"></span>
+                    </button>
+                    <input type="hidden" name="_next" value="https://ivanbecerraa.github.io/Portafolio/">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <footer>
         <a href="#inicio" class="arriba"><i class="fa-solid fa-angles-up"></i></a>
