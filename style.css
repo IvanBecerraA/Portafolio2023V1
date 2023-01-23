@@ -353,10 +353,13 @@ html{
     color: #fff;
     font-size: 18px;
 }
+.contacto .contenedor-contacto input:focus, .contenedor-contacto textarea:focus{
+    box-shadow: 0 0 20px #fff;
+}
 .contacto button{
     cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
+    background-color: orange;
+    border: none;
     width: fit-content;
     display: block;
     margin: 20px auto;
@@ -365,23 +368,20 @@ html{
     color: #fff;
     position: relative;
     z-index: 10;
+    border-radius: 5px;
+    box-shadow: 0 0 20px orange;
+    transition: .5s;
+    text-decoration: none;
 }
-.contacto button .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: rgb(224, 141, 64);
-    z-index: -1;
-    transition: 1s;
-}
-.contacto button:hover .overlay{
-    width: 100%;
+.contacto button:hover{
+    color: #fff;
+    box-shadow: 0 0 20px orange,
+                0 0 50px orange,
+                0 0 85px orange;
 }
 /* Footer */
 footer{
-    background-color: #252A2E;
+    background-color: #1e2326;
     color: #fff;
     padding: 20px 0 30px 0;
     text-align: center;
@@ -410,9 +410,6 @@ footer .redes a:hover{
     box-shadow: 0 0 20px orange,
     0 0 50px orange;
 }
-footer .redes a:hover{
-    background-color: rgb(224, 141, 64);
-}
 footer .arriba{
     display: block;
     width: 50px;
@@ -427,6 +424,7 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+    transition: .5s;
 }
 footer .arriba:hover{
     box-shadow: 0 0 20px orange,
