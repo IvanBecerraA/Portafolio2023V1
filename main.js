@@ -1,4 +1,7 @@
 let menuVisible = false;
+const img1 = document.getElementById('img1');
+const img2 = document.getElementById('img2');
+
 function mostrarOcultarMenu(){
     if(menuVisible){
         document.getElementById("nav").classList ="";
@@ -15,10 +18,6 @@ function seleccionar(){
     menuVisible = false;
 }
 
-/* function efectoProyecto(){
-    var e = document.getElementById("proyectos")
+function img1(){
+    document.getElementById("img2").innerHTML = "adjasjdasjdsaidj";
 }
-
-window.onscroll = function(){
-    efectoProyecto();
-} */
